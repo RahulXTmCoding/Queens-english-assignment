@@ -4,7 +4,11 @@ import styled from "styled-components";
 import { OverlayProps } from "../interfaces";
 import { getTextFromHTML } from "../utils/parser";
 
-const Overlay: React.FC<OverlayProps> = ({ onClose, question, input }) => {
+const OverlayMessage: React.FC<OverlayProps> = ({
+  onClose,
+  question,
+  input,
+}) => {
   const [isCorrectAnswer, setIsCorrectAnswer] = useState<boolean>(false);
   useEffect(() => {
     if (input.current) {
@@ -37,7 +41,7 @@ const Overlay: React.FC<OverlayProps> = ({ onClose, question, input }) => {
   );
 };
 
-export default Overlay;
+export default OverlayMessage;
 
 const StyledContainer = styled.div`
   position: fixed;

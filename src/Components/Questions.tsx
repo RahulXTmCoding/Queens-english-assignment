@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
-import { getQuestion } from "../Services/question";
+import { getQuestion } from "../services/question";
 import get from "lodash/get";
 import first from "lodash/first";
-import Overlay from "./Overlay";
+import Overlay from "./OverlayMessage";
 import { QuestionProps } from "../interfaces";
 
 const Questions: React.FC = () => {
